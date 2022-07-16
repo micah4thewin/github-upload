@@ -1,0 +1,105 @@
+#editor {
+  height: calc(100% - 70px);
+  overflow: hidden;
+}
+
+/* Let's highlight canvas boundaries */
+#cc {
+  background: solid;
+  background-color: #738dc9;
+  z-index: 1000;
+}
+
+#pageMenu {
+  height: 70px;
+  max-height: auto;
+  background: solid;
+  background-color: #f8f9fa;
+  border-bottom: 2px #cccccc solid;
+  width: 100%;
+}
+
+#dropdownMenuButton1 {
+  background-color: #f8f9fa;
+  color:  #000000;
+  border-color:  #cccccc;
+  border-width: 2px;
+}
+
+#dropdownMenuButton1:hover {
+  background-color: #cccccc;
+  color:  #000000;
+  border-color:   #738dc9;
+}
+
+#dropdownMenuButton1:active {
+  background-color: #333333;
+  color:  #ffffff;
+  border-color:  #fff;
+  border-width: 2px;
+}
+
+
+
+
+body {
+  background: solid;
+  background-color: #f8f9fa;
+}
+
+#cc-block-svg  {
+  width: 40px;
+}
+.cc-block__media > svg {
+  width: 40px;
+}
+.cc-block-label > svg {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+
+/* Tail WInd */
+
+body, html {
+  margin: 0;
+  height: 100%;
+
+}
+
+
+/* Fit icons properly */
+.cc-block {
+    min-height: auto !important;
+    padding-top: 25px !important;
+   padding-bottom: 25px !important;
+}
+.gjs-block-svg {
+  margin-bottom: 10px;
+}
+
+.cc-block > svg {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1250px) {
+  /* Make blocks full width */
+.cc-block {
+    padding-top: 25px !important;
+   padding-bottom: 25px !important;
+    width: 100% !important;
+    min-height: auto !important;
+}
+
+/* Fit icons properly */
+.cc-block svg {
+    width: 85%;
+}
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+#newcol {
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--SEO -->
+  <meta name="title" content="Code Casually: Dashboard">
+  <meta name="description" content="The best way to create beautiful websites quickly and without needing to code. Try Code Casually for free today. ">
+  <meta name="keywords" content="wysiwyg, website design, create a website, website builder">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Code Casually">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content=Code Casually: Create a website for free>
+  <meta property="og:site_name" content=Code Casually>
+  <meta property="og:url" content=https://www.codecasually.com>
+  <meta property="og:description" content=The best way to create beautiful websites quickly and without needing to code. Try Code Casually for free today.>
+  <meta property="og:type" content=website>
+  <meta property="og:image" content=/src/images/ogimage.jpg>
+</head>
+
+<body class="bg-light" id="dashboard">
+
+  <!-- Main Content -->
+  <section id="authenticated-content" class="py-5 my-3">
+    <!-- Main Content -->
+    <div id="overflow">
+    <!-- Create Project Modal -->
+
+    <!--Create Modal -->
+    <div class="modal fade" id="websiteModal" tabindex="-1" aria-labelledby="websiteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="websiteModalLabel">Create your project</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-center ">
+            <label class="px-2" for="websitename">Name:</label>
+            <input type="text" name="websitename" id="websiteName" maxlength="60" class="px-2">
+            <br>
+            <label class="px-2" for="websiteDescription">Description:</label>
+            <textarea type="text" name="websiteDescription" id="websiteDescription" maxlength="160" class="px-2"></textarea>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark mt-3 px-2" data-bs-dismiss="modal" id="closewebsiteModal">Close</button>
+            <button type="button" class="btn btn-outline-dark mt-3 px-2" id="createwebsiteButton" data-bs-dismiss="modal">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Update Modal -->
+    <div class="modal fade" id="updateWebsiteModal" data-website="" tabindex="-1" aria-labelledby="UpdateWebsiteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="outputText">Update your Project</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-center">
+            <label class="px-2" for="updateWebsitename">Name:</label>
+            <input type="text" name="updateWebsitename" id="websiteNameUpdate" maxlength="60" class="px-2">
+            <br>
+            <label class="px-2" for="updateWebsiteDescription">Description:</label>
+            <textarea type="text" name="updateWebsiteDescription" id="updateWebsiteDescriptionUpdate" maxlength="160" class="px-2"></textarea>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark mt-3 px-2" data-bs-dismiss="modal" id="closeUpdateWebsiteModal">Close</button>
+            <button type="button" id="updateWebsiteButton" class="btn btn-outline-dark mt-3 px-2" data-id="" data-bs-dismiss="modal">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project cards -->
+
+    <div class="row d-flex justify-content-center">
+
+      <div class="col-2"></div>
+      <div class="col-8 py-5">
+        <h1 class="fw-bolder lh-1 mb-3 text-start mt-5" data-aos="fade-right">WEBSITES:</h1>
+      <p class="col-xl-10 fs-6 text-muted" id="p2">This is where you can view and manage your websites. Select a website to manage it's pages and assets, create a new website project and utilize learning resources.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-dark mt-3 px-2" data-bs-toggle="modal" data-bs-target="#websiteModal">
+          Create a website
+        </button>
+
+
+      </div>
+
+      <!-- Gutter-->
+      <div class="col-2"></div>
+
+      <div class="row my-5">
+        <div class="col-2"></div>
+        <div class="col-lg-8 d-flex justify-content-center flex-wrap" id="websiteRG" >
+
+        </div>
+
+        <!-- Gutter -->
+        <div class="col-2"></div>
+
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <script src="main.bundle.js"></script>
+
+</body>
+
+</html>
